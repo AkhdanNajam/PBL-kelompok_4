@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar OKI</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="auth-page register-page">
+  <main class="card">
+    <h1>Daftar OKI</h1>
+    <p class="description">Setelah mendaftar, akun perlu diverifikasi Admin sebelum bisa meminjam atau meminjamkan barang.</p>
+    <form action="index.html" method="post">
+      <div>
+        <label for="nama">Nama Organisasi</label>
+        <input type="text" id="nama" name="nama" maxlength="150" placeholder="Contoh: BEM Polinema" required />
+      </div>
+      <div>
+        <label for="jenis">Jenis OKI</label>
+        <select id="jenis" name="jenis" required>
+          <option value="">-- Pilih jenis --</option>
+          <option value="BEM">BEM</option>
+          <option value="HMJ">HMJ</option>
+          <option value="UKM">UKM</option>
+          <option value="Lembaga">Lembaga</option>
+        </select>
+      </div>
+      <div>
+        <label for="kontak">Kontak (opsional)</label>
+        <input type="text" id="kontak" name="kontak" maxlength="20" placeholder="Nomor kontak" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="nama@okipolinema.ac.id" required />
+      </div>
+      <div>
+        <label for="password">Password (min. 6 karakter)</label>
+        <input type="password" id="password" name="password" minlength="6" required />
+      </div>
+      <button type="submit">Daftar</button>
+    </form>
+    <div class="secondary">
+      Sudah punya akun? <a href="login.html">Login</a>
+    </div>
+  </main>
+</body>
+</html>

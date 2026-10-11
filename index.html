@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="home-page">
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">Sistem Peminjaman Barang Antar-OKI Polinema</div>
+    </div>
+  </header>
+
+  <main class="container">
+
+      <h2>Sistem Peminjaman Barang Antar-OKI Polinema</h2>
+      <p>Pinjam dan pinjamkan inventaris antar organisasi kemahasiswaan dengan alur pengajuan, persetujuan, serah terima, dan pengembalian.</p>
+
+      <div class="stat-grid">
+        <div class="stat"><strong>0</strong><span>Barang aktif</span></div>
+        <div class="stat"><strong>0</strong><span>OKI terverifikasi</span></div>
+        <div class="stat"><strong>0</strong><span>Peminjaman berjalan</span></div>
+      </div>
+
+      <div id="login" class="login-panel">
+        <h2>Login</h2>
+        <form method="post" action="login.html">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" value="" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Masuk</button>
+        </form>
+
+        <p>Belum punya akun? <a href="register.html" target="_blank" rel="noopener">Daftar OKI</a></p>
+      </div>
+
+      <h3>Peminjaman Terbaru <a class="lihat-semua" href="login.html">Lihat semua →</a></h3>
+      <div class="table-responsive">
+        <table>
+          <thead>
+          </thead>
+          <tbody>
+    
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Sistem Peminjaman Barang Antar-OKI Polinema</footer>
+</body>
+</html>
